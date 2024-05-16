@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object assignment</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+
+        label {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        input:focus {
+            border: 10px solid navy;
+            color: navy;
+        }
+
+        input {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        select {
+            border: 2px solid black;
+            width: 200px;
+            text-align: center;
+        }
+
+        select:focus {
+            border: 10px solid navy;
+            /* scale: calc(2px); */
+            color: navy;
+        }
+
+        #newDiv {
+            text-align: center;
+            border: 10px solid navy;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Q3d -->
+    <div id="container">
+        <h1>form for records</h1>
+        <label for="">Name</label><br><br>
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <label for="">Gender:</label><br><br>
+        <input type="radio" id="male" value="Male" name="gender">Male
+        <input type="radio" id="female" name="gender" value="Female">female
+
+        <br>
+        <br>
+        <label for="">Address</label><br><br>
+        <input style="text-align: center;" type="text" name="Address" id="Address" placeholder="Address">
+        <br>
+        <h2>education</h2>
+        <label for=""> education</label><br><br>
+        <select name="education" id="education">
+            <option value="">Select</option>
+            <option value="intermediate">intermediate</option>
+            <option value="Matric">Matric</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Masters">Masters</option>
+        </select>
+        <h2>Profession</h2>
+        <label for="">Profession</label><br><br>
+        <select name="profession" id="profession">
+            <option value="">Select</option>
+            <option value="Corporate Job">Corporate Job</option>
+            <option value="Business Owner">Business Owner</option>
+            <option value="Goverment Job">Goverment Job</option>
+            <option value="CEO of Company">CEO of Company</option>
+        </select>
+        <br><br>
+        <button onclick="addRecords()">Add records</button>
+        <button onclick="displayRecords()">display records</button>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
